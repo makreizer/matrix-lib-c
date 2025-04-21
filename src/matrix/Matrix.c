@@ -101,7 +101,8 @@ Matrix load_matrix_from_file(const char* filename) {
       if (is_matrix_created) {
         // Копирование данных в матрицу
         for (size_t row_index = 0; row_index < (size_t)rows; row_index++) {
-          for (size_t col_index = 0; col_index < (size_t)cols; col_index++) {
+          for (size_t col_index = 0; col_index < (size_t)cols;
+               col_index++) {
             result.data[row_index][col_index] =
                 file_data[row_index * cols + col_index];
           }

@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "../matrix/Matrix.h"
-#include "../output/Output.h"
+#include "matrix/Matrix.h"
+#include "output/Output.h"
 
 int main() {
   int res = 0;  // Общий флаг успеха операций

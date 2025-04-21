@@ -16,7 +16,7 @@ BIN_DIR = ./bin
 LIB_SRC := $(shell find $(SRC_DIR) -name "*.c" ! -name "main.c")
 TEST_SRC := $(shell find $(TEST_DIR) -name "*.c" ! -name "*_runner.c")
 TEST_RUNNER_SRC := $(TEST_DIR)/tests_runner.c
-MAIN_SRC := $(SRC_DIR)/main/main.c
+MAIN_SRC := $(SRC_DIR)/main.c
 
 # Object files
 LIB_OBJ := $(patsubst $(SRC_DIR)/%.c,$(BUILD_DIR)/%.o,$(LIB_SRC))
